@@ -1,0 +1,87 @@
+% set font and input encoding:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+% select the language:
+\usepackage[ngerman, english]{babel}
+% for direct text quotes:
+\usepackage{epigraph}
+% import package to select multiple affiliations for authors:
+\usepackage{authblk}
+% import package to color table headings
+\usepackage[table]{xcolor}
+% package comment for commenting out several lines of code at once:
+\usepackage{comment}
+% package to use symbols like \degree etc.
+\usepackage{textcomp,gensymb}
+% change spacing of lines:
+\usepackage[onehalfspacing]{setspace}
+% set hyperlinks:
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=blue, pdfnewwindow=true, urlcolor=blue}
+% create a glossary with recurring abbreviations:
+\usepackage[toc, xindy, shortcuts, nonumberlist]{glossaries}
+% package to include graphics
+\usepackage{graphicx}
+% use packages to print captions:
+\usepackage{caption}
+\usepackage{subcaption}
+% convert .eps files to .pdf:
+\usepackage{epstopdf}
+% adjust the margins of the document:
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\geometry{includehead=true, includefoot=true, headheight=40pt}
+% 'isomath' sets upper case greek letters italic in accordance
+% with the International Standard ISO 80000-2
+\usepackage{isomath}
+% This command prevents hyperref from referencing the first time an acronym is used:
+\renewcommand*{\glslinkcheckfirsthyperhook}{\ifglsused{\glslabel}{}{\ifglshaslong{\glslabel}{\setkeys{glslink}{hyper=false}}{}}}
+% This command turns all hyperrefs of acronyms to black:
+\renewcommand*{\glstextformat}[1]{\textcolor{black}{#1}}
+% package to change settings of ietm lists:
+\usepackage{enumitem}
+% change formatting "to save trees":
+% \usepackage{moreverb,savetrees}
+\usepackage{float}
+% highly recommended as an adjunct to serious mathematical typesetting:
+\usepackage{amsmath}
+% load packages for timeline:
+\usepackage{array, booktabs}
+% change data format to German convention:
+\usepackage[ddmmyyyy]{datetime}
+\renewcommand{\dateseparator}{.}
+% change font to helvetica
+\usepackage[T1]{fontenc}
+\usepackage{sansmathfonts}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\renewcommand{\rmdefault}{\sfdefault}
+% change color of section headings
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries\color{blue}}
+\titleformat*{\subsection}{\normalsize\bfseries\color{blue}}
+\titleformat*{\subsubsection}{\normalsize\bfseries\color{blue}}
+\titleformat*{\paragraph}{\normalsize\bfseries\color{black}}
+\titleformat*{\subparagraph}{\normalsize\bfseries\color{blue}}
+% adjust header and footer:
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% set header height to deal with warning "Package Fancyhdr Warning: \headheight is too small":
+\setlength{\headheight}{20pt}
+\fancyhf{}
+\rhead{Seite \thepage\ von \pageref{LastPage}}
+\lfoot{\footnotesize Template of the Faculty of Psychology and Human Movement Science of the University of Hamburg for the Ethics Proposal dated February 1, 2019 (as per DGPs submission Ethics Proposal\_V5.docx dated June 02, 2017), revised on June 11, 2023}
+% create yes and no boxes
+\usepackage{amssymb}
+\newcommand{\YesNo}{$\square$ yes \quad\quad $\square$ no \quad\quad \textit{(please tick as appropriate)}}
+% remove indentation for new paragraphs:
+\usepackage[parfill]{parskip}
+% add yellow-shaded box to highlight paragraph:
+\usepackage{xcolor}
+\usepackage{framed}
+\colorlet{shadecolor}{yellow!30}
+% add package for simple text highlighting:
+\usepackage{color,soul}
+\title{\vspace{-1cm}Request for Opinion of the Ethics Committee of the Faculty of Psychology and Human Movement Science of the University of Hamburg\vspace{-1.5cm}}
+\author{}
+\date{}
