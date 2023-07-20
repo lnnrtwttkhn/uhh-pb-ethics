@@ -1,0 +1,8 @@
+ApplicantName: Applicant Name
+ApplicantResearchInstitution: University of Hamburg, Institute of Psychology
+ApplicantAddress: Von-Melle-Park 5, 20146 Hamburg
+ApplicantEmailAddress: \href{mailto:firstname.lastname@uni-hamburg.de}{firstname.lastname@uni-hamburg.de}
+ApplicantPhoneNumber: +49 040-42838 XXXX
+ApplicantFaxNumber: not applicable
+DateApplication: \today
+ProjectTitle: Project Title

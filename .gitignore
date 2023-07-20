@@ -26,4 +26,5 @@
 *.fdb*
 *.pdf
 *.xdy
-
+venv
+config.tex
